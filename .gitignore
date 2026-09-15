@@ -1,0 +1,33 @@
+# IDE
+.idea/
+.vscode/
+*.iml
+*.iws
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+build/
+dist/
+*.egg-info/
+
+# Secretos y temporales
+.env
+.env.*
+!.env.example
+credentials.*
+secrets.*
+*.log
+*.tmp
+*.bak
+.DS_Store
+Thumbs.db
