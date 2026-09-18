@@ -7,3 +7,4 @@ consumos entre 200 y 400 kWh, y un tercer precio (el más caro) para consumos
 superiores a 400 kWh. Los precios y los límites de cada tramo deben definirse
 como constantes.
 """
+consumo = float(input("Introduce el consumo eléctrico mensual en kWh: "))
