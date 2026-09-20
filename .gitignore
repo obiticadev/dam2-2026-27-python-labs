@@ -1,33 +1,96 @@
-# IDE
+# IDE: estado local
 .idea/
-.vscode/
 *.iml
 *.iws
+*.swp
+*.swo
+*.swn
+*~
+.history/
 
-# Python
+# VS Code: solo configuracion compartible conocida
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# Bytecode y caches de Python
 __pycache__/
 *.py[cod]
 *$py.class
+
+# Entornos virtuales
 .venv/
 venv/
 env/
+ENV/
+.conda/
+
+# Pruebas, analisis y cobertura
 .pytest_cache/
 .mypy_cache/
 .ruff_cache/
+.pytype/
+.pyre/
+.hypothesis/
+.tox/
+.nox/
 .coverage
+.coverage.*
 htmlcov/
+coverage.xml
+junit.xml
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Empaquetado regenerable
 build/
 dist/
+.eggs/
 *.egg-info/
+pip-wheel-metadata/
 
 # Secretos y temporales
 .env
 .env.*
 !.env.example
+!.env.sample
+!.env.template
+!.env.*.example
+!.env.*.sample
+!.env.*.template
 credentials.*
 secrets.*
+!credentials.example
+!credentials.example.*
+!credentials.*.example
+!secrets.example
+!secrets.example.*
+!secrets.*.example
+*.key
+*.p12
+*.pfx
+*-private.pem
 *.log
 *.tmp
+*.temp
 *.bak
+~$*
+.~lock.*#
 .DS_Store
+._*
 Thumbs.db
+Desktop.ini
+
+# Estado transitorio de SQLite; las bases de ejemplo si se conservan.
+*.db-journal
+*.sqlite-journal
+*.db-wal
+*.db-shm
+*.sqlite-wal
+*.sqlite-shm
+
+# Los JAR deliberados se conservan; build/ y dist/ siguen siendo regenerables.
+!**/*.jar
