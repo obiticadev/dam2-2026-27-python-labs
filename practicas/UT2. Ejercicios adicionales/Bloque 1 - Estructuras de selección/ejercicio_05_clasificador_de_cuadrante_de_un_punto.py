@@ -5,3 +5,13 @@ determine en qué cuadrante del plano cartesiano se encuentra (primero, segundo,
 tercero o cuarto), o si está sobre alguno de los ejes o en el origen de
 coordenadas.
 """
+while True:
+    try:
+        x = float(input("Coordenada X: "))
+        y = float(input("Coordenada Y: "))
+        break
+    except ValueError as error:
+        print(f"Error en\n{error}")
+
+
+
