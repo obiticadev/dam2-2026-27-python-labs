@@ -11,3 +11,13 @@ import random
 
 num = random.randrange(100)+1
 print(num)
+
+while True:
+    select = int(input("Introduce un número: "))
+    if select > num:
+        print("-")
+    elif select < num:
+        print("+")
+    else:
+        print("BINGO")
+        break

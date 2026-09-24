@@ -6,3 +6,13 @@ permitido (definido mediante dos constantes, valor mínimo y valor máximo),
 mostrando un aviso en cada intento fallido y el número finalmente válido al
 terminar.
 """
+VALUE_MIN = 10
+VALUE_MAX = 20
+
+while True:
+    num = int(input("Introduce un número: "))
+    if num > VALUE_MIN and num < VALUE_MAX:
+        print("BINGO")
+        break
+    else:
+        print("Fallaste")
