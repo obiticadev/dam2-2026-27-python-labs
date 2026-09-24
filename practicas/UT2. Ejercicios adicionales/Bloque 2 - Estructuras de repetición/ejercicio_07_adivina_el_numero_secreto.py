@@ -6,3 +6,8 @@ while, hasta que lo acierte. En cada intento fallido, el programa debe indicar s
 el número secreto es mayor o menor que el intento introducido, y al final debe
 mostrar en cuántos intentos se ha acertado.
 """
+
+import random
+
+num = random.randrange(100)+1
+print(num)
