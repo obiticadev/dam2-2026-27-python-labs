@@ -5,3 +5,9 @@ Muestra el resultado en la cláusula else del try (solo si no se ha producido
 ninguna excepción) y un mensaje final en la cláusula finally, que debe ejecutarse
 siempre, haya habido error o no.
 """
+import Math
+try:
+    num = int(input("Introduce un número: "))
+    print(f"El cuadrado de {num} = {Math.pow(num, 2)}")
+except ValueError:
+    print("Introduce un número válido")
